@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ahana — Media Kit | @ahathings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,600&family=Jost:wght@200;300;400;500&family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--bd:#2e1508;--bm:#5e2710;--bw:#7d3d1e;--cr:#f5ede3;--cd:#e4d0ba;--go:#c9a66a;--tm:#c4956a;--dk:#1a0a03}
+    body{background:var(--bd);color:var(--cr);font-family:'Jost',sans-serif;font-weight:300;overflow-x:hidden}
+    body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      background-size:200px 200px}
+
+```
+.wrap{max-width:900px;margin:0 auto;padding:0 1.5rem;position:relative;z-index:1}
+
+/* HERO */
+.hero{background:linear-gradient(160deg,var(--bd) 0%,var(--bm) 60%,var(--bw) 100%);padding:5rem 1.5rem 4rem;text-align:center;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:80px;background:linear-gradient(to top,var(--bd),transparent)}
+.glow{position:absolute;border-radius:50%;pointer-events:none}
+.g1{width:500px;height:500px;top:-200px;right:-150px;background:radial-gradient(circle,rgba(196,106,60,.2) 0%,transparent 70%)}
+.g2{width:350px;height:350px;bottom:-100px;left:-100px;background:radial-gradient(circle,rgba(201,166,106,.13) 0%,transparent 70%)}
+.hero-lbl{font-size:.62rem;letter-spacing:.45em;text-transform:uppercase;color:var(--go);margin-bottom:.8rem;opacity:0;animation:up .7s .1s forwards}
+.hero-name{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(3.5rem,10vw,7rem);line-height:1;color:var(--cr);opacity:0;animation:up .8s .3s forwards}
+.hero-handle{font-size:.7rem;letter-spacing:.5em;text-transform:uppercase;color:var(--tm);margin:.5rem 0 1.5rem;opacity:0;animation:up .8s .45s forwards}
+.hero-tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1rem,2.5vw,1.3rem);color:var(--cd);max-width:460px;line-height:1.8;margin:0 auto;opacity:0;animation:up .8s .6s forwards}
+.dl-btn{display:inline-flex;align-items:center;gap:.5rem;margin-top:2rem;padding:.85rem 2rem;background:var(--go);color:var(--bd);font-size:.68rem;letter-spacing:.25em;text-transform:uppercase;text-decoration:none;font-weight:500;transition:background .3s,transform .2s;opacity:0;animation:up .8s .8s forwards}
+.dl-btn:hover{background:var(--cr);transform:translateY(-2px)}
+.dl-btn svg{width:14px;height:14px;fill:var(--bd)}
+
+/* STATS */
+.stats-section{padding:4rem 1.5rem;background:linear-gradient(135deg,var(--bd) 0%,#3e1c0a 100%)}
+.lbl{font-size:.62rem;letter-spacing:.45em;text-transform:uppercase;color:var(--go);margin-bottom:.6rem;text-align:center}
+.ttl{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(1.8rem,4vw,2.8rem);color:var(--cr);text-align:center;margin-bottom:.5rem}
+.div{width:50px;height:1px;background:var(--go);opacity:.55;margin:1.2rem auto}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1rem;margin-top:2.5rem;max-width:800px;margin-left:auto;margin-right:auto}
+.sbox{border:1px solid rgba(201,166,106,.25);padding:1.5rem 1rem;text-align:center;background:rgba(255,255,255,.025);transition:border-color .3s,transform .3s}
+.sbox:hover{border-color:var(--go);transform:translateY(-4px)}
+.snum{font-family:'Playfair Display',serif;font-size:2rem;color:var(--go);display:block}
+.sdsc{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--tm);margin-top:.3rem;display:block}
+
+/* PLATFORMS */
+.plat-section{padding:4rem 1.5rem;background:var(--bd)}
+.plat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;max-width:700px;margin:2rem auto 0}
+@media(max-width:500px){.plat-grid{grid-template-columns:1fr}}
+.pcard{border:1px solid rgba(201,166,106,.22);padding:2rem;background:rgba(255,255,255,.025);transition:border-color .3s}
+.pcard:hover{border-color:var(--go)}
+.pcard-name{font-size:.65rem;letter-spacing:.3em;text-transform:uppercase;color:var(--go);margin-bottom:.4rem}
+.pcard-handle{font-family:'Playfair Display',serif;font-style:italic;font-size:1.4rem;color:var(--cr);margin-bottom:1rem}
+.pcard-stat{font-size:.78rem;color:var(--cd);margin:.25rem 0}
+.pcard-stat span{color:var(--go);font-weight:500}
+
+/* NICHES + TOOLS */
+.nt-section{padding:4rem 1.5rem;background:linear-gradient(135deg,#3e1c0a 0%,var(--bm) 100%)}
+.nt-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;max-width:800px;margin:2rem auto 0}
+@media(max-width:600px){.nt-grid{grid-template-columns:1fr}}
+.nt-title{font-size:.62rem;letter-spacing:.4em;text-transform:uppercase;color:var(--go);margin-bottom:1rem}
+.pills{display:flex;flex-wrap:wrap;gap:.6rem}
+.pill{border:1px solid rgba(201,166,106,.3);padding:.5rem 1rem;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--cd);transition:border-color .3s,color .3s}
+.pill:hover{border-color:var(--go);color:var(--go)}
+.tool-pill{background:rgba(255,255,255,.03)}
+
+/* APPROACH */
+.approach-section{padding:4rem 1.5rem;background:var(--bd);text-align:center}
+.approach-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.2rem;max-width:800px;margin:2.5rem auto 0}
+.acard{border:1px solid rgba(201,166,106,.2);padding:2rem 1.5rem;background:rgba(0,0,0,.18);text-align:left;transition:border-color .3s}
+.acard:hover{border-color:var(--go)}
+.anum{font-family:'Playfair Display',serif;font-size:2.5rem;color:var(--go)}
+.albl{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--tm);margin:.3rem 0 .8rem}
+.adsc{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.98rem;color:var(--cd);line-height:1.7}
+
+/* DID YOU KNOW */
+.dyk-section{padding:4rem 1.5rem;background:linear-gradient(135deg,#3e1c0a 0%,var(--bm) 100%);text-align:center}
+.dyk-card{max-width:700px;margin:2rem auto;border:1px solid rgba(201,166,106,.28);padding:2.5rem;background:rgba(0,0,0,.2);position:relative}
+.dyk-card::before{content:'"';font-family:'Playfair Display',serif;font-size:6rem;line-height:1;color:var(--go);opacity:.1;position:absolute;top:-1rem;left:1.2rem}
+.dyk-stat{font-family:'Playfair Display',serif;font-size:clamp(2rem,6vw,3.5rem);color:var(--go);display:block;margin-bottom:.5rem}
+.dyk-txt{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(.95rem,2vw,1.15rem);color:var(--cd);line-height:1.85}
+.dyk-src{font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--tm);margin-top:1.2rem;display:block}
+.dpills{display:flex;flex-wrap:wrap;justify-content:center;gap:.7rem;margin-top:2rem}
+.dpill{border:1px solid rgba(201,166,106,.3);padding:.5rem 1rem;font-size:.63rem;letter-spacing:.13em;text-transform:uppercase;color:var(--go)}
+
+/* SERVICES */
+.svc-section{padding:4rem 1.5rem;background:var(--bd);text-align:center}
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.2rem;max-width:800px;margin:2.5rem auto 0}
+.scard{border:1px solid rgba(201,166,106,.18);padding:2rem 1.2rem;background:rgba(255,255,255,.02);transition:transform .3s,border-color .3s}
+.scard:hover{transform:translateY(-5px);border-color:rgba(201,166,106,.5)}
+.sico{font-size:1.6rem;margin-bottom:.8rem;display:block}
+.snm{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cr);margin-bottom:.5rem}
+.sdp{font-family:'Cormorant Garamond',serif;font-size:.92rem;color:var(--tm);line-height:1.65}
+
+/* CTA */
+.cta-section{padding:5rem 1.5rem;background:linear-gradient(160deg,#3e1c0a 0%,var(--bm) 100%);text-align:center}
+.cta-inner{max-width:520px;margin:0 auto}
+.cta-p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.1rem;color:var(--cd);line-height:1.85;margin-bottom:2.5rem}
+.clinks{display:flex;flex-direction:column;gap:1rem;align-items:center}
+.clink{display:flex;align-items:center;gap:.7rem;font-size:.75rem;letter-spacing:.13em;color:var(--cd);text-decoration:none;transition:color .3s}
+.clink:hover{color:var(--go)}
+.clink svg{width:16px;height:16px;stroke:var(--go);fill:none;flex-shrink:0}
+.cta-btn{display:inline-block;margin-top:2.5rem;padding:1rem 2.8rem;background:var(--go);color:var(--bd);font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;text-decoration:none;font-weight:500;transition:background .3s,transform .2s}
+.cta-btn:hover{background:var(--cr);transform:translateY(-2px)}
+
+footer{background:var(--dk);text-align:center;padding:1.8rem;font-size:.58rem;letter-spacing:.2em;color:rgba(201,149,106,.35);border-top:1px solid rgba(201,166,106,.07);position:relative;z-index:1}
+
+@keyframes up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{transition:opacity .7s ease,transform .7s ease}
+.reveal.hidden{opacity:0;transform:translateY(24px)}
+```
+
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="glow g1"></div>
+  <div class="glow g2"></div>
+  <div style="position:relative;z-index:1">
+    <p class="hero-lbl">UGC Creator Media Kit</p>
+    <h1 class="hero-name">Ahana</h1>
+    <p class="hero-handle">@ahathings</p>
+    <p class="hero-tagline">I help brands tell their story through authentic, aesthetic content that builds trust and drives real action.</p>
+    <a href="ahana_mediakit.pdf" download class="dl-btn">
+      <svg viewBox="0 0 24 24"><path d="M12 15l-4-4h3V4h2v7h3l-4 4zm-6 4h12v-2H6v2z"/></svg>
+      Download PDF Media Kit
+    </a>
+  </div>
+</div>
+
+<!-- STATS -->
+
+<section class="stats-section">
+  <div class="wrap reveal">
+    <p class="lbl">By The Numbers</p>
+    <h2 class="ttl">Real Reach, Real Results</h2>
+    <div class="div"></div>
+    <div class="stats-grid">
+      <div class="sbox"><span class="snum">56.4K</span><span class="sdsc">IG Views / Month</span></div>
+      <div class="sbox"><span class="snum">2,349</span><span class="sdsc">IG Followers</span></div>
+      <div class="sbox"><span class="snum">32.8K</span><span class="sdsc">YouTube Views</span></div>
+      <div class="sbox"><span class="snum">713</span><span class="sdsc">YT Likes</span></div>
+      <div class="sbox"><span class="snum">7+</span><span class="sdsc">Brand Collabs</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PLATFORMS -->
+
+<section class="plat-section">
+  <div class="wrap reveal">
+    <p class="lbl" style="text-align:center">Platforms</p>
+    <h2 class="ttl">Where I Create</h2>
+    <div class="div"></div>
+    <div class="plat-grid">
+      <div class="pcard">
+        <p class="pcard-name">Instagram</p>
+        <p class="pcard-handle">@ahathings</p>
+        <p class="pcard-stat"><span>2,349</span> Followers</p>
+        <p class="pcard-stat"><span>56.4K</span> Views in last 30 days</p>
+        <p class="pcard-stat"><span>43</span> Posts</p>
+        <p class="pcard-stat">Mini vlogs · Still frames · Everyday stories</p>
+      </div>
+      <div class="pcard">
+        <p class="pcard-name">YouTube</p>
+        <p class="pcard-handle">@ahathings</p>
+        <p class="pcard-stat"><span>32.8K</span> Total Views</p>
+        <p class="pcard-stat"><span>713</span> Likes · <span>106</span> Shares</p>
+        <p class="pcard-stat"><span>40</span> Comments</p>
+        <p class="pcard-stat">Food · Lifestyle · Tech Shorts</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NICHES + TOOLS -->
+
+<section class="nt-section">
+  <div class="wrap reveal">
+    <div class="nt-grid">
+      <div>
+        <p class="nt-title">Content Niches</p>
+        <div class="pills">
+          <div class="pill">Beauty &amp; Skincare</div>
+          <div class="pill">Food &amp; Beverage</div>
+          <div class="pill">Lifestyle &amp; Home</div>
+          <div class="pill">Tech &amp; Gadgets</div>
+        </div>
+      </div>
+      <div>
+        <p class="nt-title">Tools &amp; Equipment</p>
+        <div class="pills">
+          <div class="pill tool-pill">&#127909; DJI Osmo Pocket 3</div>
+          <div class="pill tool-pill">&#127908; DJI Mic Mini 2</div>
+          <div class="pill tool-pill">&#128241; iPad Air</div>
+          <div class="pill tool-pill">&#9986;&#65039; InShot Pro</div>
+          <div class="pill tool-pill">&#127912; Canva Pro</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+
+<section class="approach-section">
+  <div class="wrap reveal">
+    <p class="lbl">My Approach</p>
+    <h2 class="ttl">Content That Converts</h2>
+    <div class="div"></div>
+    <div class="approach-grid">
+      <div class="acard"><div class="anum">Hook</div><p class="albl">First 3 Seconds</p><p class="adsc">Every video opens with a pattern interrupt that stops the scroll before the viewer even realises it.</p></div>
+      <div class="acard"><div class="anum">Story</div><p class="albl">Authentic Narrative</p><p class="adsc">I frame your product inside a real moment so viewers see themselves in the content — not an ad.</p></div>
+      <div class="acard"><div class="anum">CTA</div><p class="albl">Clear Action</p><p class="adsc">Every piece ends with a purposeful call-to-action crafted to drive clicks, saves, or purchases.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DID YOU KNOW -->
+
+<section class="dyk-section">
+  <div class="wrap reveal">
+    <p class="lbl">Did You Know?</p>
+    <h2 class="ttl">Why Brands Invest in UGC</h2>
+    <div class="div"></div>
+    <div class="dyk-card">
+      <span class="dyk-stat">4x Higher CTR</span>
+      <p class="dyk-txt">UGC-based ads achieve <strong style="color:var(--go)">4x higher click-through rates</strong> than standard branded content. Websites using UGC see <strong style="color:var(--go)">29% more conversions</strong>. And <strong style="color:var(--go)">93% of marketers</strong> confirm UGC outperforms traditional content — at a fraction of the cost.</p>
+      <span class="dyk-src">Sources: influencers.club &middot; whop.com UGC Statistics 2025</span>
+    </div>
+    <div class="dpills">
+      <div class="dpill">78% of Millennials rely on UGC to buy</div>
+      <div class="dpill">UGC cuts costs by up to 30%</div>
+      <div class="dpill">93% say UGC beats branded content</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+
+<section class="svc-section">
+  <div class="wrap reveal">
+    <p class="lbl">What I Offer</p>
+    <h2 class="ttl">Services</h2>
+    <div class="div"></div>
+    <div class="svc-grid">
+      <div class="scard"><span class="sico">&#127916;</span><p class="snm">UGC Videos</p><p class="sdp">Scroll-stopping short-form videos for ads, Reels &amp; YT Shorts.</p></div>
+      <div class="scard"><span class="sico">&#128247;</span><p class="snm">Photo Content</p><p class="sdp">Warm, editorial lifestyle &amp; product photography.</p></div>
+      <div class="scard"><span class="sico">&#128230;</span><p class="snm">Unboxing &amp; Demo</p><p class="sdp">Engaging hands-on product showcase content.</p></div>
+      <div class="scard"><span class="sico">&#9997;&#65039;</span><p class="snm">Reviews</p><p class="sdp">Trust-building video &amp; written testimonials.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+
+<section class="cta-section">
+  <div class="cta-inner reveal">
+    <p class="lbl">Let's Collaborate</p>
+    <h2 class="ttl">Ready to work together?</h2>
+    <div class="div"></div>
+    <p class="cta-p">Whether you're a small D2C brand or a fast-growing startup, I'd love to create content that truly connects with your audience. Flexible pricing, fast turnaround, zero fluff.</p>
+    <div class="clinks">
+      <a href="https://www.instagram.com/ahathings" class="clink" target="_blank">
+        <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="#c9a66a" stroke="none"/></svg>
+        @ahathings — Instagram DM
+      </a>
+      <a href="https://youtube.com/@ahathings" class="clink" target="_blank">
+        <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.97C18.88 4 12 4 12 4s-6.88 0-8.59.45A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.97C5.12 20 12 20 12 20s6.88 0 8.59-.45a2.78 2.78 0 0 0 1.95-1.97A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#c9a66a" stroke="none"/></svg>
+        @ahathings — YouTube
+      </a>
+      <a href="mailto:ahanadasg@email.com" class="clink">
+        <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+        ahanadasg@email.com
+      </a>
+    </div>
+    <a href="mailto:ahanadasg@email.com" class="cta-btn">Start a Project</a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Ahana &middot; @ahathings &middot; UGC Creator &amp; IT Consultant &nbsp;&middot;&nbsp; All rights reserved</p>
+</footer>
+
+<script>
+  var els=document.querySelectorAll('.reveal');
+  els.forEach(function(el){el.classList.add('hidden')});
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.remove('hidden');obs.unobserve(e.target)}
+    });
+  },{threshold:0.08});
+  els.forEach(function(el){obs.observe(el)});
+  setTimeout(function(){
+    document.querySelectorAll('.reveal.hidden').forEach(function(el){el.classList.remove('hidden')});
+  },1500);
+</script>
+
+</body>
+</html>
